@@ -1,0 +1,20 @@
+
+
+1、需要定义一个实体类，比如Demo,有id,name;
+2、需要定义SQL和Java类的映射关系，DemoMapper,注意：这是接口不是类.
+3、需要编写一个服务类DemoService提供服务。
+4、编写一个控制类，DemoController,提供访问。
+5、需要数据源，连写数据库。
+6、编写启动类，进行测试。
+7、创建一个demo表 （已经提前创建了）：
+-------------------------------------
+
+CREATE TABLE  demo (
+   id  int  NOT NULL AUTO_INCREMENT ,
+   name  varchar(100) NULL ,
+   PRIMARY KEY (id)
+);
+
+
+
+返回主键id ---> @Options注解即可.
